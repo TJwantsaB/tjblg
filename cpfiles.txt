@@ -1,0 +1,1 @@
+rsync -av --delete --exclude='images/' ~/tjdigital/posts/ ~/tjdigital/tjblg/content/posts
