@@ -91,23 +91,23 @@ if ! git push origin master; then
     exit 1
 fi
 
-# Step 8: Push the public folder to the hostinger branch using subtree split and force push
-echo "Deploying to GitHub Hostinger..."
-if git branch --list | grep -q 'hostinger-deploy'; then
-    git branch -D hostinger-deploy
+# Step 8: Push the public folder to the nginx branch using subtree split and force push
+echo "Deploying to GitHub nginx..."
+if git branch --list | grep -q 'nginx-deploy'; then
+    git branch -D nginx-deploy
 fi
 
-if ! git subtree split --prefix public -b hostinger-deploy; then
+if ! git subtree split --prefix public -b nginx-deploy; then
     echo "Subtree split failed."
     exit 1
 fi
 
-if ! git push origin hostinger-deploy:hostinger --force; then
-    echo "Failed to push to hostinger branch."
-    git branch -D hostinger-deploy
+if ! git push origin nginx-deploy:nginx --force; then
+    echo "Failed to push to nginx branch."
+    git branch -D nginx-deploy
     exit 1
 fi
 
-git branch -D hostinger-deploy
+git branch -D nginx-deploy
 
 echo "All done! Site synced, processed, committed, built, and deployed."
