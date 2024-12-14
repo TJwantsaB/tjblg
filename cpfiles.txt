@@ -1,1 +1,4 @@
-rsync -av --delete --exclude='images/' ~/tjdigital/posts/ ~/tjdigital/tjblg/content/posts
+sending incremental file list
+
+sent 261 bytes  received 13 bytes  548.00 bytes/sec
+total size is 5,714  speedup is 20.85

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Site</title>
-    <link>https://example.org/</link>
+    <link>blog.tjdigital.co/</link>
     <description>Recent content on My New Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="blog.tjdigital.co/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NEW KID ON THA BLOCK</title>
-      <link>https://example.org/posts/welcome/</link>
+      <link>blog.tjdigital.co/posts/welcome/</link>
       <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/welcome/</guid>
+      <guid>blog.tjdigital.co/posts/welcome/</guid>
       <description>Welcome to the party !!! ily i am writing shit</description>
     </item>
   </channel>

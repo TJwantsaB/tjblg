@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'blog.tjdigital.co'
 languageCode = 'en-us'
 title = 'My New Site'
 theme = 'Hugo-Octopress'
