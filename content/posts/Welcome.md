@@ -10,7 +10,7 @@ tags:
 Welcome to the party !!! 
 
 
-![[panda _ aesthetic.jpeg]]
+![Image Description](/images/panda%20_%20aesthetic.jpeg)
 
 BRUH
 TESTX
