@@ -1,5 +1,6 @@
 ---
 title: Training Reflective Dialogue Agents via Beam Search + DPO + Self-Play Evaluation
+date: 2025-06-30
 slug: training-reflective-dialogue-agents
 draft: false
 ---
