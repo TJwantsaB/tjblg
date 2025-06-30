@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+  
+    
+    
+      <link href="/css/fonts.css" rel="stylesheet" type="text/css">
+    
+  
+
+  
+  <title></title>
+
+  
+  
+  <link rel="stylesheet" href="/css/hugo-octopress.css">
+
+  
+  
+
+  
+    <link rel="stylesheet" href="/css/fork-awesome.min.css">
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  
+  
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  
+  <meta name="generator" content="Hugo 0.131.0">
+
+  
+  
+
+  
+  
+
+
+
+</head>
+<body>
+
+
+<header role="banner">
+<hgroup>
+  
+  <h1><a href="/">My New Site</a></h1>
+    <h2></h2>
+</hgroup></header>
+
+
+<nav role="navigation">
+<fieldset class="mobile-nav">
+  
+  <select onchange="location = this.value;">
+    <option value="">Navigate…</option>
+      
+  </select>
+</fieldset>
+
+
+<ul class="main-navigation">
+  
+  
+</ul>
+
+<ul class="subscription">
+  
+</ul>
+
+
+</nav>
+
+
+<div id="main">
+  <div id="content">
+    <div>
+      <article class="hentry" role="article">
+
+        
+        
+
+<header>
+  <p class="meta">Jan 1, 0001
+     - 5 minute read 
+    
+
+    
+  </p>
+  <h1 class="entry-title">
+      
+  </h1>
+</header>
+
+
+        <div class="entry-content">
+          
+          
+          
+          <p>I’m excited to share a recent project where I trained a large language model to act as a reflective therapist — producing responses that not only make sense, but prompt deeper, thoughtful replies from users.</p>
+<hr>
+<h3 id="objective"><strong>Objective</strong></h3>
+<p>To train a dialogue agent that prioritizes <em>reflectiveness,</em> <em>learning and intention,</em> especially in therapeutic or coaching-style settings. Unlike traditional next-token training or preference modeling, we aimed to directly optimize for the <strong>quality of user reflection prompted</strong> by the model’s responses.</p>
+<hr>
+<h3 id="method-overview"><strong>Method Overview</strong></h3>
+<p>We designed a novel self-supervised training loop combining:</p>
+<ul>
+<li>
+<p><strong>Diverse Beam Search</strong>: Generates multiple candidate responses per prompt to encourage semantic diversity and style variation.</p>
+</li>
+<li>
+<p><strong>Self-Play Evaluation</strong>: A frozen reference model simulates patient replies to each therapist candidate. These simulated replies are scored using a BERT-based classifier with <strong>turn-aware weighting</strong> — emphasizing:</p>
+<ul>
+<li>
+<p><em>Reflection</em> in early dialogue turns</p>
+</li>
+<li>
+<p><em>Learning</em> in the middle</p>
+</li>
+<li>
+<p><em>Intention</em> near the end</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Direct Preference Optimization (DPO)</strong>: The model is trained to prefer candidates that elicit higher reflectiveness scores from simulated patient replies. A <strong>KL divergence penalty</strong> is used to regularize updates and preserve core model behaviors while shifting toward more reflective outputs.</p>
+</li>
+</ul>
+<p>This framework allows the model to improve by learning from its <strong>own conversational impact</strong>, with no human labels required.</p>
+<hr>
+<h3 id="key-results--evaluation"><strong>Key Results &amp; Evaluation</strong></h3>
+<p>We evaluated the trained therapist model against an unaligned reference model across ~500 simulated therapeutic dialogues. Metrics include responsiveness, clarity, and engagement. Significance was assessed via Wilcoxon signed-rank tests.</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Therapist</th>
+<th>Reference</th>
+<th>Wilcoxon p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Word Count</td>
+<td>89.84</td>
+<td>85.00</td>
+<td>0.0004 **</td>
+</tr>
+<tr>
+<td>Questions per Response</td>
+<td>2.24</td>
+<td>2.09</td>
+<td>0.0291 *</td>
+</tr>
+<tr>
+<td>Readability (Flesch Score)</td>
+<td>62.58</td>
+<td>58.90</td>
+<td>&lt; 0.0001 ***</td>
+</tr>
+<tr>
+<td>Cosine Similarity to Prompt</td>
+<td>0.330</td>
+<td>0.270</td>
+<td>&lt; 0.0001 ***</td>
+</tr>
+<tr>
+<td>Adjusted Responsiveness</td>
+<td>0.123</td>
+<td>0.100</td>
+<td>&lt; 0.0001 ***</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Example 1: Deepening Emotional Insight Through Reflective Prompting</strong></p>
+<p><em>User:</em></p>
+<p>Yes, actually. A few months ago, there was a disagreement with a friend over a misunderstanding about plans we had made. Initially, I felt like I handled it quite calmly and constructively. But after some time, I realized that I might have overreacted a bit. I felt like I jumped to conclusions and didn&rsquo;t give my friend the benefit of the doubt. This made me feel a bit embarrassed and also made me wonder if I was being too sensitive. Since then, I&rsquo;ve been trying to take a step back and reassess my reactions before jumping to conclusions.</p>
+<p><em>AI Therapist:</em></p>
+<p>That&rsquo;s a very insightful example. <strong>It sounds like this experience has helped you become more aware of your reactions and the possibility of overreaction.</strong> Reflecting on such moments can be really helpful in learning and growing. Have you found that taking a step back and reassessing your reactions has <strong>made a difference</strong> in how you handle conflicts now?</p>
+<p><em>Reference Model:</em></p>
+<p>That&rsquo;s a great example. Reflecting on past interactions and recognizing when you might have overreacted can indeed be challenging but also a valuable learning experience. How did this realization affect your interactions with your friend after that? Did you find it easier to approach future conflicts in a calmer manner?</p>
+<p>Both responses acknowledge the user’s self-reflection, but the <strong>AI Therapist model</strong> stands out for several reasons:</p>
+<ul>
+<li>
+<p>It validates the user’s insight using emotionally <strong>affirming language</strong> (“very insightful”, “helped you become more aware”).</p>
+</li>
+<li>
+<p>It <strong>echoes</strong> the user’s internal learning process and reinforces self-growth (“Reflecting on such moments&hellip; learning and growing”).</p>
+</li>
+<li>
+<p>It ends with a <strong>constructive, open-ended question</strong> about impact — aligned with <em>Learning</em>-focused turn scoring.</p>
+</li>
+</ul>
+<p><strong>Example 2: Supporting Emotional Overwhelm with Intentional Goal Framing</strong></p>
+<p><em>User:</em></p>
+<p>Well, I&rsquo;ve been feeling a bit overwhelmed lately, so having specific goals can definitely help. <strong>The biggest challenge is figuring out what&rsquo;s actually achievable without feeling like I&rsquo;m setting myself up for failure.</strong> I think I might start with something small, like improving my communication skills at work. Maybe that could involve practicing active listening during meetings or asking for feedback on a project I&rsquo;m working on. That way, I can see progress and feel a bit more in control.</p>
+<p><em>AI Therapist:</em></p>
+<p>That sounds like a great starting point. Practicing active listening and seeking feedback can be very effective ways to improve your communication skills. By focusing on small, manageable steps, you&rsquo;re setting yourself up for success. <strong>How would you feel about trying to incorporate one or two of these small goals into your daily routine, and then adjusting them as needed based on how they feel?</strong></p>
+<p><em>Reference Model:</em></p>
+<p>That sounds like a great starting point. Improving communication skills can indeed make a significant difference in both your personal and professional life. Practicing active listening and seeking feedback are excellent strategies. How did you feel after trying those techniques in your last meeting? Did you notice any changes in how others responded to you?</p>
+<p>Here, the user explicitly expresses <strong>overwhelm</strong> and a desire for <strong>achievable</strong> progress. The <strong>AI Therapist model</strong> demonstrates stronger emotional intelligence and intentional scaffolding:</p>
+<ul>
+<li>
+<p>It <strong>mirrors the user’s concern</strong> about manageability: “small, <strong>manageable</strong> steps”, “setting yourself up for success”.</p>
+</li>
+<li>
+<p>It reframes goals not just as tasks, but as <strong>habits</strong>, inviting the user to “adjust them as needed based on how they feel” — a subtle nod to autonomy and agency.</p>
+</li>
+<li>
+<p>The closing question is present-focused and non-presumptive: “How would you feel about trying&hellip;” instead of assuming action already taken.</p>
+</li>
+</ul>
+<p><strong>Closing Reflections ;p</strong></p>
+<p>While the examples here show some of the therapist model’s strengths, they’re definitely cherry-picked — there were plenty of times when the reference model gave better, clearer, or more natural responses. This wasn’t about building a perfect system, though. The real win was in pushing how we train models toward more human goals like listening, reflecting, and supporting growth.</p>
+<p>I see this project as an early but meaningful step in that direction. By using self-play, turn-aware evaluation, and preference learning, we’ve started to show that models can learn from their impact, not just from next-token accuracy. There’s still a lot to improve — but I’m excited by what’s possible when we train models not just to talk, but to <strong>help people think</strong>.</p>
+
+        </div>
+        
+
+<footer>
+  <p class="meta">
+    <span class="byline author vcard">Posted by <span class="fn"></span></span>
+    
+    <time>Jan 1, 0001</time>
+    
+    </span>
+  </p>
+
+  
+
+  <p class="meta">
+    
+
+    
+      <a class="basic-alignment right" href="blog.tjdigital.co/posts/welcome/" title="NEW KID ON THA BLOCK">NEW KID ON THA BLOCK</a>
+    
+  </p>
+  
+</footer>
+
+
+      </article>
+    </div>
+    
+
+<aside class="sidebar thirds">
+  <section class="first odd">
+
+    
+
+    <p>
+      
+    </p>
+  </section>
+
+  
+  
+
+
+
+<ul class="sidebar-nav">
+  <li class="sidebar-nav-item">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+  
+  </li>
+</ul>
+
+  
+
+  
+
+  
+  
+  
+</aside>
+
+  </div>
+</div>
+
+    <footer role="contentinfo">
+      <p>Copyright &copy; 2025  - <a href="/license/">License</a> -
+        <span class="credit">Powered by <a target="_blank" href="https://gohugo.io" rel="noopener noreferrer">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/" rel="noopener noreferrer">Hugo-Octopress</a> theme.
+      </p>
+    </footer>
+
+    
+    
+
+
+
+    
+    
+    
+
+    
+  
+
+
+  </body>
+</html>
+
