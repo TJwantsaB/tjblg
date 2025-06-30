@@ -1,3 +1,11 @@
+---
+
+title: "Training Reflective Dialogue Agents via Beam Search + DPO + Self-Play Evaluation"
+slug: training-reflective-dialogue-agents
+draft: false
+
+---
+
 
 I’m excited to share a recent project where I trained a large language model to act as a reflective therapist — producing responses that not only make sense, but prompt deeper, thoughtful replies from users.
 
