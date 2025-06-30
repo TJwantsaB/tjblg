@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My New Site</title>
-    <link>http://blog.tjdigital.co/tags/</link>
+    <link>https://blog.tjdigital.co/tags/</link>
     <description>Recent content in Tags on My New Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.tjdigital.co/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.tjdigital.co/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EXCITED</title>
-      <link>http://blog.tjdigital.co/tags/excited/</link>
+      <link>https://blog.tjdigital.co/tags/excited/</link>
       <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://blog.tjdigital.co/tags/excited/</guid>
+      <guid>https://blog.tjdigital.co/tags/excited/</guid>
       <description></description>
     </item>
     <item>
       <title>Thanks Mom</title>
-      <link>http://blog.tjdigital.co/tags/thanks-mom/</link>
+      <link>https://blog.tjdigital.co/tags/thanks-mom/</link>
       <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://blog.tjdigital.co/tags/thanks-mom/</guid>
+      <guid>https://blog.tjdigital.co/tags/thanks-mom/</guid>
       <description></description>
     </item>
   </channel>
