@@ -9,7 +9,6 @@ tags:
 
 Welcome to the party !!! 
 
-![[panda _ aesthetic.jpeg]]
 
 BRUH
 TESTX
