@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "ZUCK MY BALLS.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "ZUCK MY BALLS"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -164,10 +165,12 @@
   },
   "active": "3ef3a09b247b4065",
   "lastOpenFiles": [
+    "Welcome.md",
+    "Gok Stop.md",
+    "ZUCK MY BALLS.md",
     "attachments/panda _ aesthetic.jpeg",
     "attachments",
     "images/panda _ aesthetic.jpeg",
-    "Welcome.md",
     "images"
   ]
 }
