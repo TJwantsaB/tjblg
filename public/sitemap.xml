@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>blog.tjdigital.co/</loc>
+    <loc>http://blog.tjdigital.co/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>blog.tjdigital.co/posts/welcome/</loc>
+    <loc>http://blog.tjdigital.co/posts/welcome/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>blog.tjdigital.co/posts/</loc>
+    <loc>http://blog.tjdigital.co/posts/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>blog.tjdigital.co/tags/swag/</loc>
+    <loc>http://blog.tjdigital.co/tags/swag/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>blog.tjdigital.co/tags/</loc>
+    <loc>http://blog.tjdigital.co/tags/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>blog.tjdigital.co/tags/yo/</loc>
+    <loc>http://blog.tjdigital.co/tags/yo/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>blog.tjdigital.co/categories/</loc>
+    <loc>http://blog.tjdigital.co/categories/</loc>
   </url><url>
-    <loc>blog.tjdigital.co/posts/training-reflective-dialogue-agents/</loc>
+    <loc>http://blog.tjdigital.co/posts/training-reflective-dialogue-agents/</loc>
   </url>
 </urlset>

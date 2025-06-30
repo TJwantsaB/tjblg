@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Swag on My New Site</title>
-    <link>blog.tjdigital.co/tags/swag/</link>
+    <link>http://blog.tjdigital.co/tags/swag/</link>
     <description>Recent content in Swag on My New Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="blog.tjdigital.co/tags/swag/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.tjdigital.co/tags/swag/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NEW KID ON THA BLOCK</title>
-      <link>blog.tjdigital.co/posts/welcome/</link>
+      <link>http://blog.tjdigital.co/posts/welcome/</link>
       <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>blog.tjdigital.co/posts/welcome/</guid>
+      <guid>http://blog.tjdigital.co/posts/welcome/</guid>
       <description>Welcome to the party !!!&#xA;BRUH TESTX TEST2 TEST3 TEST4 TEST5 TEST6 TEST7 TEST8 TEST9 Test15 ily i am writing shit&#xA;If this works that would be crazy&#xA;I think I did it</description>
     </item>
   </channel>
