@@ -1,4 +1,4 @@
-baseURL = 'http://blog.tjdigital.co/'
+baseURL = 'https://blog.tjdigital.co/'
 languageCode = 'en-us'
 title = 'My New Site'
 theme = 'Hugo-Octopress'
