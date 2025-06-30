@@ -16,10 +16,10 @@
       <description>Welcome to the party !!!&#xA;BRUH TESTX TEST2 TEST3 TEST4 TEST5 TEST6 TEST7 TEST8 TEST9 Test15 ily i am writing shit&#xA;If this works that would be crazy&#xA;I think I did it</description>
     </item>
     <item>
-      <title></title>
-      <link>blog.tjdigital.co/posts/training-reflective-dialogue-agents-via-beam-search-&#43;-dpo-&#43;-self-play-evaluation/</link>
+      <title>Training Reflective Dialogue Agents via Beam Search &#43; DPO &#43; Self-Play Evaluation</title>
+      <link>blog.tjdigital.co/posts/training-reflective-dialogue-agents/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>blog.tjdigital.co/posts/training-reflective-dialogue-agents-via-beam-search-&#43;-dpo-&#43;-self-play-evaluation/</guid>
+      <guid>blog.tjdigital.co/posts/training-reflective-dialogue-agents/</guid>
       <description>I’m excited to share a recent project where I trained a large language model to act as a reflective therapist — producing responses that not only make sense, but prompt deeper, thoughtful replies from users.&#xA;Objective To train a dialogue agent that prioritizes reflectiveness, learning and intention, especially in therapeutic or coaching-style settings. Unlike traditional next-token training or preference modeling, we aimed to directly optimize for the quality of user reflection prompted by the model’s responses.</description>
     </item>
   </channel>
