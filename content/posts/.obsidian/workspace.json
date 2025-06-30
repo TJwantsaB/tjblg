@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Training Reflective Dialogue Agents via Beam Search + DPO + Self-Play Evaluation.md",
-                "mode": "preview",
+                "file": "Welcome.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Training Reflective Dialogue Agents via Beam Search + DPO + Self-Play Evaluation"
+              "title": "Welcome"
             }
           }
         ]
@@ -163,10 +163,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3ef3a09b247b4065",
+  "active": "f46aeb4cd2586043",
   "lastOpenFiles": [
-    "Welcome.md",
     "Training Reflective Dialogue Agents via Beam Search + DPO + Self-Play Evaluation.md",
+    "Welcome.md",
     "Untitled",
     "Ideas/ZUCK MY BALLS.md",
     "Ideas/Gok Stop.md",

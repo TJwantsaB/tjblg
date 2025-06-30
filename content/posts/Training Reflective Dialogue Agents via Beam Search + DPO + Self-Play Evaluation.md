@@ -54,6 +54,8 @@ We evaluated the trained therapist model against an unaligned reference model ac
 
 ---
 
+### **Examples responses**
+
 **Example 1: Deepening Emotional Insight Through Reflective Prompting**
 
 _User:_

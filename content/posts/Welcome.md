@@ -3,8 +3,8 @@ title: NEW KID ON THA BLOCK
 date: 2024-11-06
 draft: false
 tags:
-  - Swag
-  - Yo
+  - EXCITED
+  - Thanks mom
 ---
 
 Welcome to the party !!! 
@@ -21,8 +21,7 @@ TEST7
 TEST8
 TEST9
 Test15
-ily
-i am writing shit
+
 
 If this works that would be crazy
 
