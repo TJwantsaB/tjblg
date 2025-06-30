@@ -1,9 +1,7 @@
 ---
-
-title: "Training Reflective Dialogue Agents via Beam Search + DPO + Self-Play Evaluation"
+title: Training Reflective Dialogue Agents via Beam Search + DPO + Self-Play Evaluation
 slug: training-reflective-dialogue-agents
-draft: false
-
+draft: true
 ---
 
 
